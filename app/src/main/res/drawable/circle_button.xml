@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">  <!-- Default state -->
+        <shape android:shape="rectangle" >
+            <!-- filled color -->
+            <solid android:color="#EE0000" />
+            <!-- set button corner radius -->
+            <corners android:radius="500dip" />
+            <!-- padding：the space between the text inside button and the edge button -->
+            <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">  <!-- Pressed -->
+        <shape android:shape="rectangle">
+            <!-- Color setting after button pressed -->
+            <solid android:color="#8B0000" />
+            <!-- Corner radius after button pressed -->
+            <corners android:radius="500dip" />
+        </shape>
+    </item>
+</selector>
