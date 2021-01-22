@@ -6,13 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/activity_background">
 
     <LinearLayout
         android:id="@+id/centerLayout"
-        android:layout_width="400dp"
+        android:layout_width="491dp"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,29 +21,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.example.custommenu.CustomButtonWidget
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
             myview:describeText="Radio Panel"
             myview:index="0" />
 
         <com.example.custommenu.CustomButtonWidget
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
             myview:describeText="Speed Selector"
             myview:index="1" />
 
         <com.example.custommenu.CustomButtonWidget
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
             myview:describeText="Heading Selector"
             myview:index="2" />
 
